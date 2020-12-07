@@ -1,0 +1,28 @@
+@startuml フォルダ削除
+actor ユーザ as u
+boundary アルバム選択画面 as a
+control フォルダ削除確認画面を表示 as b
+boundary フォルダ削除確認画面 as c
+control ウインドウを閉じる as d
+control フォルダ削除処理 as e
+entity アルバム選択画面 as f 
+
+
+u -> a:追加したフォルダを長押し
+activate a
+activate b
+a -> b:1.1起動()
+activate c
+b -> c:1.2表示()
+deactivate a
+deactivate b
+u -> c:はいorいいえをタップ
+activate d
+c -> d:2.1いいえをタップ
+a <-- d
+c -> e:2.2はいをタップ
+activate e
+d <-- e:2.2.1フォルダ消去() 
+d -> f
+
+@enduml

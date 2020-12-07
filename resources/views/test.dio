@@ -1,0 +1,106 @@
+<mxfile host="65bd71144e" modified="2020-10-22T05:22:22.278Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="UiW2WADslCbhUvc-AoXx" version="13.6.5">
+    <diagram id="bEp8aRPuAOaV8xY85l1Y" name="ページ2">
+        <mxGraphModel dx="989" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="RdtTpfzoy4MeMeVDXtfJ-0"/>
+                <mxCell id="RdtTpfzoy4MeMeVDXtfJ-1" parent="RdtTpfzoy4MeMeVDXtfJ-0"/>
+                <mxCell id="1gKXZjNh9G640stHmqkg-2" value="タイトル以外のページ" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="200" y="240" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-5" value="ユーザ" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="20" y="490" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-9" value="アルバムボタンをタップ" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.007;entryY=0.546;entryDx=0;entryDy=0;entryPerimeter=0;" parent="RdtTpfzoy4MeMeVDXtfJ-1" target="1gKXZjNh9G640stHmqkg-2" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="70" y="529.29" as="sourcePoint"/>
+                        <mxPoint x="150" y="529.29" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-10" value="アルバム選択画面表示" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="540" y="240" width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-12" value="" style="html=1;verticalAlign=bottom;endArrow=block;" parent="RdtTpfzoy4MeMeVDXtfJ-1" source="1gKXZjNh9G640stHmqkg-2" target="1gKXZjNh9G640stHmqkg-10" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="303" y="331" as="sourcePoint"/>
+                        <mxPoint x="340" y="419.29" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-13" value="アルバム選択画面" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="279" y="370" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-14" value="春華秋冬/☆のいずれかをタップ" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.064;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" parent="RdtTpfzoy4MeMeVDXtfJ-1" target="1gKXZjNh9G640stHmqkg-13" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="70" y="530" as="sourcePoint"/>
+                        <mxPoint x="150" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-17" value="" style="endArrow=classic;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" source="1gKXZjNh9G640stHmqkg-10" target="1gKXZjNh9G640stHmqkg-13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="329" y="600" as="sourcePoint"/>
+                        <mxPoint x="379" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-18" value="アルバム画面表示" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="540" y="350" width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-19" value="" style="endArrow=classic;html=1;exitX=1.021;exitY=0.454;exitDx=0;exitDy=0;exitPerimeter=0;" parent="RdtTpfzoy4MeMeVDXtfJ-1" source="1gKXZjNh9G640stHmqkg-13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="460" as="sourcePoint"/>
+                        <mxPoint x="540" y="406" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-20" value="アルバム画面" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="210" y="500" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-21" value="" style="endArrow=classic;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" source="1gKXZjNh9G640stHmqkg-18" target="1gKXZjNh9G640stHmqkg-20" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="550" as="sourcePoint"/>
+                        <mxPoint x="430" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-22" value="写真をタップ" style="html=1;verticalAlign=bottom;endArrow=block;" parent="RdtTpfzoy4MeMeVDXtfJ-1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="70" y="527.65" as="sourcePoint"/>
+                        <mxPoint x="205" y="528" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-23" value="" style="endArrow=classic;html=1;exitX=1.013;exitY=0.421;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="RdtTpfzoy4MeMeVDXtfJ-1" source="1gKXZjNh9G640stHmqkg-20" target="1gKXZjNh9G640stHmqkg-24" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="540" as="sourcePoint"/>
+                        <mxPoint x="460" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-24" value="写真の拡大画像ウインドウを表示" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" vertex="1">
+                    <mxGeometry x="500" y="490" width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-31" value="ページ番号をタップ" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0.344;entryY=0.982;entryDx=0;entryDy=0;entryPerimeter=0;" parent="RdtTpfzoy4MeMeVDXtfJ-1" target="1gKXZjNh9G640stHmqkg-20" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="71.6" y="530" as="sourcePoint"/>
+                        <mxPoint x="240" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1gKXZjNh9G640stHmqkg-32" value="" style="endArrow=classic;html=1;" parent="RdtTpfzoy4MeMeVDXtfJ-1" source="1gKXZjNh9G640stHmqkg-24" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="690" as="sourcePoint"/>
+                        <mxPoint x="700" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="HL2I9IpwPeB459oWL7Tq-3" value="ページ遷移処理" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="RdtTpfzoy4MeMeVDXtfJ-1">
+                    <mxGeometry x="420" y="610" width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="f46fNZDoMJ-20pDZvDD7-5" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.082;entryY=0.264;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RdtTpfzoy4MeMeVDXtfJ-1" target="HL2I9IpwPeB459oWL7Tq-3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="267" y="581" as="sourcePoint"/>
+                        <mxPoint x="350" y="540" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="330" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="PQcX9ilsHqlm29p8A4RL-0" value="写真の拡大画像" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="RdtTpfzoy4MeMeVDXtfJ-1">
+                    <mxGeometry x="710" y="490" width="100" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

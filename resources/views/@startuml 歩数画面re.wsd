@@ -1,0 +1,26 @@
+@startuml 歩数画面
+actor ユーザ as u
+boundary メニュー画面 as a
+control 歩数ウインドウ表示 as b
+boundary 歩数ウインドウ as c
+control 歩数データ送信処理 as d
+control カウンタリセット as e
+entity ユーザデータベース as f
+
+
+activate f
+u -> a:歩数をタップ
+activate a
+activate b
+a -> c:1.1表示()
+deactivate a
+deactivate b
+activate c
+u -> c:送信をタップ
+activate d
+activate e
+c <-> f:2.1送信処理()
+deactivate e
+deactivate d
+deactivate c
+@enduml 

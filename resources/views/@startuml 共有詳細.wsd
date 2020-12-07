@@ -1,0 +1,35 @@
+@startuml 共有詳細
+actor ユーザ as u
+boundary アルバム画面 as a
+control 写真拡大画面表示 as b
+boundary 写真拡大画面 as c
+control 詳細画面表示 as d
+boundary 写真詳細画面 as e
+control 共有ウインドウ表示 as f
+boundary 共有画面 as g
+control 外部サイト遷移処理 as h
+
+u -> a:写真をタップ
+activate a
+activate b
+a -> c
+deactivate a
+deactivate b
+activate c
+u -> c:詳細ボタンをタップ
+activate d
+c -> e
+deactivate d
+activate e
+u -> c:共有ボタンをタップ
+deactivate e
+activate f
+activate g
+c -> g
+deactivate f
+deactivate c
+u -> g:SNSを選択
+g -> h
+deactivate g
+activate h
+@enduml

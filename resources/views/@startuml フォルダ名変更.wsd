@@ -1,0 +1,23 @@
+@startuml フォルダ名変更
+actor ユーザ as u
+boundary アルバム選択画面 as a
+control フォルダ名変更画面を表示 as b
+boundary フォルダ名入力画面 as c
+control フォルダ名変更処理 as d
+entity アルバム選択画面 as e 
+
+
+u -> a:追加したフォルダを長押し
+activate a
+activate b
+a -> b:1.1起動()
+activate c
+b -> c:1.2表示()
+deactivate a
+deactivate b
+u -> c:入力後okボタンタップ
+activate d
+activate e
+c -> e:2.1フォルダ名を変更してウインドウを閉じる()
+
+@enduml

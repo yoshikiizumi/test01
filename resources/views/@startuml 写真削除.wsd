@@ -1,0 +1,44 @@
+@startuml 写真削除
+actor ユーザ as u
+boundary アルバム画面 as a
+control 削除or移動ウインドウ表示 as b
+boundary 削除or移動ウインドウ as c
+control 削除確認ウインドウ表示 as d
+boundary 削除確認画面 as e
+control ウインドウを閉じる as f
+control 写真削除処理 as g 
+entity 削除後アルバム画面 as h
+
+u -> a:写真を長押しする
+activate a
+a -> b:1.1起動()
+deactivate a
+activate b
+b -> c:1.2表示()
+deactivate b
+activate c
+u -> c:削除をタップ
+c -> e:2.1表示()
+activate d
+deactivate d
+activate e
+deactivate c
+u -> e:はいorいいえをタップ
+e -> f:2.1.1いいえをタップ
+activate f
+a <-- f:何もせずに戻る
+activate a
+e -> g:2.1.2はいをタップ
+deactivate a
+deactivate e
+activate g
+f <-- g:削除処理()
+deactivate g
+f -> h
+activate h
+deactivate f
+
+
+
+@enduml
+

@@ -1,0 +1,41 @@
+@startuml photocheck
+actor ユーザ as u
+boundary タイトル以外のページ as a
+control アルバム選択画面表示 as b
+boundary アルバム選択画面 as c
+control アルバム画面表示 as d
+boundary アルバム画面 as e
+control 画像の拡大画像表示 as f
+boundary 写真の拡大画像 as g
+control ページ遷移処理 as h 
+
+u -> a:アルバムボタンをタップ
+activate a
+a -> b
+deactivate a
+activate b
+b -> c:1.1表示()
+activate c
+u -> c:春夏秋冬☆いずれかタップ
+activate a
+activate d
+c -> d
+d-> e::2.1表示()
+deactivate d
+activate e
+deactivate c
+deactivate b
+u -> e:写真をタップ
+activate f
+e -> f:3-1起動()
+f -> g:3.2拡大表示()
+activate g
+deactivate f
+deactivate g
+u -> e:ページ番号をタップ
+e -> h:4.1ページ遷移()
+deactivate e
+activate h
+deactivate h
+
+@enduml

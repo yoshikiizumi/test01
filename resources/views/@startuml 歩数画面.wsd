@@ -1,0 +1,48 @@
+@startuml 歩数画面
+actor ユーザ as u
+boundary メニュー画面 as a
+control 歩数ウインドウ表示 as b
+boundary 歩数ウインドウ as c
+control 写真選択ウインドウ表示 as d
+boundary 写真選択ウインドウ as e
+control 歩数データ送信処理 as f
+control カウンタリセット as g
+control ウインドウを閉じる as k
+entity ユーザデータベース as h
+control 写真データ送信 as i
+entity 地図データベース as j
+
+
+u -> a:歩数をタップ
+activate a
+activate b
+a -> c:1.1表示()
+deactivate a
+deactivate b
+activate c
+u -> c:送信をタップ
+c -> e:2.1表示()
+activate d
+deactivate c
+deactivate d
+activate e
+u -> e:写真を一枚選択してOKタップ
+activate f
+activate g
+e -> h:3.1歩数データ送信
+activate h
+e -> j:3.2写真データ送信
+deactivate h
+activate j
+activate i
+e -> k
+deactivate j
+deactivate i
+deactivate f
+deactivate g
+deactivate e
+activate k
+c <-- k:送信処理完了メッセージ
+deactivate k
+activate c
+@enduml 

@@ -1,0 +1,18 @@
+@startuml test2
+actor ユーザ
+boundary ブラウザ
+control web
+control jissyu3
+boundary input
+boundary output
+
+ユーザ -> ブラウザ : To boundary
+ブラウザ -> web : To control
+web -> jissyu3 : To entity
+jissyu3 -> input : To database
+ユーザ -> input : To collections
+input -> jissyu3 : ex
+web -> jissyu3 : ex
+jissyu3 -> output : ex
+
+@enduml

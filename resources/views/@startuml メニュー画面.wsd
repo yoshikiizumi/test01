@@ -1,0 +1,61 @@
+@startuml メニュー画面
+actor ユーザ as u
+boundary タイトル以外のページ as a
+control メニューウインドウ表示 as b
+boundary メニュー画面 as c
+control ランキングor歩数表示 as d
+control ランキングデータ取得 as k
+entity ランキングデータ as l
+control データ送信 as m 
+boundary ランキング確認画面 as e
+boundary 歩数確認画面 as f
+control ヘルプ選択表示 as g
+boundary ヘルプ選択画面 as h
+control 各チュートリアル表示 as i
+boundary 各チュートリアル画面 as j
+
+
+u -> a:メニューをタップ
+activate a
+a -> b:1.1起動()
+deactivate a
+activate b
+b -> c:1.2表示()
+deactivate b
+activate c
+u -> c:ミッションをタップ
+activate d
+c -> d
+d -> k:2.1表示()
+activate k
+k -> l
+deactivate k
+activate e
+activate m
+activate l
+l -> e
+deactivate l
+u -> c:歩数をタップ
+deactivate m
+deactivate e
+activate f
+c -> d
+d -> f:2.1.2表示()
+deactivate f
+deactivate d
+u -> c:ヘルプをタップ
+activate g
+c -> h:2.1.3表示()
+activate h
+deactivate g
+deactivate c
+u -> h:いずれかをタップ
+activate j
+h -> j:3.1表示()
+activate i
+deactivate h
+deactivate i
+
+
+
+@enduml

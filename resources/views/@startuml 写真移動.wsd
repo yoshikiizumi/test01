@@ -1,0 +1,44 @@
+@startuml 写真移動
+actor ユーザ as u
+boundary アルバム画面 as a
+control 削除or移動ウインドウ表示 as b
+boundary 削除or移動ウインドウ as c
+control 移動先選択ウインドウ表示 as d
+boundary 移動先選択画面 as e
+control 写真移動処理 as g 
+control 移動完了画面表示 as h
+boundary 移動完了画面 as i
+control ウインドウを閉じる as f
+
+u -> a:写真を長押しする
+activate a
+a -> b:1.1起動()
+deactivate a
+activate b
+b -> c:1.2表示()
+deactivate b
+activate c
+u -> c:移動をタップ
+c -> e:2.1表示()
+activate e
+activate d
+deactivate d
+deactivate c
+u -> e:移動先フォルダ選択
+activate g
+activate h
+e -> i
+deactivate g
+deactivate h
+deactivate e
+activate i
+i -> f
+deactivate i
+activate f
+a <-- f
+deactivate f
+
+
+
+@enduml
+

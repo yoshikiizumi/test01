@@ -1,0 +1,23 @@
+@startuml フォルダ作成
+actor ユーザ as u
+boundary アルバム選択画面 as a
+control フォルダ名入力画面表示 as b
+boundary フォルダ名入力画面 as c
+control フォルダ作成 as d
+entity アルバム選択画面 as e 
+
+
+u -> a:フォルダ追加ボタンをタップ
+activate a
+activate b
+a -> b:1.1起動()
+activate c
+b -> c:1.2表示()
+deactivate a
+deactivate b
+u -> c:okボタンタップ
+activate d
+activate e
+c -> e:2.1フォルダを作成してウインドウを閉じる()
+
+@enduml
